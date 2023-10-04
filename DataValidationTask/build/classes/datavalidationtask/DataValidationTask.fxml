@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="datavalidationtask.DataValidationTaskController">
+   <children>
+      <Label layoutX="156.0" layoutY="14.0" prefHeight="39.0" prefWidth="288.0" text="DATA VALIDATION TASK">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="109.0" text="1. Enter a double" />
+      <Label layoutX="64.0" layoutY="157.0" text="2. Enter a string" />
+      <Label layoutX="64.0" layoutY="207.0" text="3. Enter a Boolean" />
+      <Label layoutX="67.0" layoutY="263.0" text="4. Choose a Date" />
+      <Label layoutX="405.0" layoutY="109.0" text="What's Your Height in meters?" />
+      <Label layoutX="427.0" layoutY="157.0" prefHeight="17.0" prefWidth="173.0" text="What Is Your First Name?" />
+      <Label layoutX="485.0" layoutY="207.0" text="Gender" />
+      <Label layoutX="485.0" layoutY="263.0" text="Date of birth" />
+      <TextField id="InputBox1" fx:id="InputBox1" layoutX="231.0" layoutY="104.0" onAction="#DoubleEntered" />
+      <TextField id="InputBox2" fx:id="InputBox2" layoutX="231.0" layoutY="152.0" onAction="#StringEntered" />
+      <CheckBox id="MaleCheck" fx:id="MaleCheck" layoutX="239.0" layoutY="207.0" mnemonicParsing="false" onAction="#MaleClicked" text="Male" />
+      <CheckBox id="FemaleCheck" fx:id="FemaleCheck" layoutX="336.0" layoutY="207.0" mnemonicParsing="false" onAction="#FemaleClicked" text="Female" />
+      <DatePicker id="DateBox" fx:id="DateBox" layoutX="218.0" layoutY="258.0" onAction="#DateChosen" />
+      <Button id="ValidateBTN" fx:id="ValidateBTN" layoutX="281.0" layoutY="292.0" mnemonicParsing="false" onAction="#Validate" text="Validate" />
+      <Label layoutX="276.0" layoutY="53.0" text="Adam Green" />
+      <TextArea id="TextArea" fx:id="TextArea" layoutX="107.0" layoutY="325.0" prefHeight="69.0" prefWidth="422.0" />
+   </children>
+</AnchorPane>
